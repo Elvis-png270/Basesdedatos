@@ -1,74 +1,55 @@
->de cada paciente se almacena:
+# Ejercicio 1
 
--nombre del paciente
+Un hospital registra información de sus pacientes.
 
--fecha de nacimiento
+> **De cada paciente se almacena:**
+>
+> - Número de paciente que lo identifica
+> - Nombre
+> - Fecha de nacimiento
 
--tipo de sangre
+> **De cada expediente médico se almacena:**
+>
+> - Número de expediente
+> - Fecha de apertura
+> - Tipo de sangre
 
->reglas del negocio
+> **Reglas del negocio:**
+>
+> 1. Cada paciente debe tener exactamente un expediente médico.
+> 2. Cada expediente médico pertenece a un único paciente.
+> 3. No puede existir un expediente sin paciente.
+> 4. No puede existir un paciente sin expediente.
 
--cada paciente debe tener exactamente un expedinete medico
->2. una universidad administra
+> **Qué se debe realizar:**
+>
+> - Identificar las entidades.
+> - Identificar los atributos.
+> - Dibujar las relaciones.
+> - Determinar la cardinalidad.
+> - Determinar la participación de cada entidad.
+![Imagen del diagrama 1](../img/ER/ER_diagrama_1.png)
+# Ejercicio 2
 
-de cada profesor se almacena:
+Una universidad administra profesores y cursos.
 
-numero de profesor id 
+> **De cada profesor se almacena:**
+>
+> - Número de profesor
+> - Especialidad
+> - Nombre
 
-nombre del profesor 
+> **De cada curso se almacena:**
+>
+> - Número de curso
+> - Nombre del curso
+> - Créditos
 
-especialidad
+> **Reglas del negocio:**
+>
+> 1. Un profesor puede impartir varios cursos.
+> 2. Un curso solamente puede ser impartido por un profesor.
+> 3. Puede existir un profesor que actualmente no imparta cursos.
+> 4. Todo curso debe estar asignado a un profesor.
 
->de cada curso se almacena:
-
-nombre del curso
-
-creditos de la materia   
->un profesor 
-puede impartir varios cursos
-
-un curso solo puede ser impartido por un profesor
-
-puede existir un profesor que no imparta cursos
-
-todo curso debe estar asignado a un profesor
-
-## Ejercicio 3
-> una escuela dministra alumnos y materias
-
-de cada *Alumno* se almacena:
--matricula
--nombre
-- semestre 
-de cada materia se almacena *materia* 
-clave de la materia
-nombre de la materia
-creditos
-reglas del negocio
-1. un alumno puede inscrbirse en varias materias
-2. una materia puede tener muhos almunos inscriyos
-3. puede exixtir una materi sin alumnos inscritos
-4. todo alumno debe estar incrito en al menos una materia
-5. de cada inscripcion se desesa almacenar:
--fecha de inscripcion:
--calificaion final
-nota: a la relacion nombrarla **inscribe**
-# ejercio 4
-uns empresa una empresa dedicad aa las ventas al por mayor necesita registrar lo siguiente:
-numero de cloiente
-nombre(El cual es una persona moral)
-pedidos
-produicto
-numero de producto
-nombre 
-precio
-reglas del negiocio
-un cliengte puede realizar muchos pedidos 
-cada pedido pertenece a un solo cliente 
-un pedido contiene varios productos
-un producto puede aparecer en muchos pedidos 
-un pedido debe contener al menos un producto
-un producto puede no haber sido vendido
-el detalle del pedido no existe sin pedido
-el detalle delm pedido no existe sin producto
-el detall almacena la cantidad vendida y el precio de venta 
+![Imagen diagrama 2](../img/ER/ER_diagrama_2.png)
